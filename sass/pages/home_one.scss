@@ -7,7 +7,7 @@ body {
     .sub_heading{
         @include flex(row, space-between, center);
         .sub_heading_border{
-            width: 45%;
+            width: 43%;
             background-color: $--primary;
             height: 1px;
             
@@ -22,9 +22,9 @@ body {
             @include flex(row, center, center);
             gap: 10px;
             i{
-font-weight: 900;
-font-size: 14px;
-color: $--nine;
+                    font-weight: 900;
+                    font-size: 14px;
+                    color: $--nine;
             }
             
         }
@@ -420,4 +420,93 @@ color: $--nine;
             }
         }
     }
+/* Education and skill start */
+.education_skills_area{
+    
+    .education_skils_wrapper{
+        @include flex(row, space-between, center);
+        flex-wrap: wrap;
+        margin-top: 60px;
+        &.style_1{
+        margin-top: 20px;
+    }
+        .apple_technology{
+            border-radius: 20px;
+            width: 630px;
+            height: 403px;
+            background-color: $--one;
+            @include flex(column, flex-start, flex-start);
+            padding:40px 20px;
+            .apple_btn_wrapper{
+                a{
+                    border-radius: 20px;
+                    width: 234px;
+                    height: 48px;
+                    display: block;
+                    font-family: $--font-family;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 175%;
+                    color: $--white;
+                    background-color: $--nine;
+                    padding-left: 20px;
+                    line-height: 48px;
+                    span{
+                        color: $--primary;
+                    }
+                }
+            }
+            .apple_technology_content{
+                padding-left: 74px;
+                margin-top: 20px;
+                h4{
+                    font-family: $--second-family;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 130%;
+                    color: $--nine;
+                }
+                p{
+                    font-family: $--font-family;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 175%;
+                    color: $--nine;
+                    margin-top: 5px;
+                }
+            }
+            .progress_container_wrapper{
+                padding-left: 74px;
+                margin-top: 20px;
+                .progress_content{
+                    @include flex(row, flex-start, center);
+                    border: 1px solid $--eight;
+                    border-radius: 20px;
+                    width: 501px;
+                    height: 57px;
+                    padding: 0px 20px;
+                    p{
+                        font-family: $--font-family;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 175%;
+                        color: $--nine;
+                        &:nth-child(2){
+                            margin-left: 210px;
+                        }
+                        
+                    }
+                }
+                .progress_line{
+                    margin-top: 11px;
+                    border-radius: 999px;
+                    width: 355px;
+                    height: 4px;
+                    background-color: $--primary;
+                }
+            }
+        }
+    }
+}
+/* Education and skill end */
     
