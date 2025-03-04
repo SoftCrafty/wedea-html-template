@@ -1,0 +1,41 @@
+@import "variables";
+@import "mixin";
+@import "./partials/header";
+@import "./partials/menu-sidebar";
+@import "./pages/home_one.scss";
+@import "./partials/animation";
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    margin-top: 150px;
+}
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+.text-right{
+    text-align: right !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+
