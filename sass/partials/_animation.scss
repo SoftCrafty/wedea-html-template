@@ -134,3 +134,17 @@
         opacity: 1;
     }
 }
+
+
+// Marquee
+@keyframes Scroll {
+  0% {
+    transform: translateX(-50vw);
+    transform: translateX(-50vw);
+  }
+  100% {
+    transform: translateX(50vw);
+    transform: translateX(50vw);
+  }
+
+}
